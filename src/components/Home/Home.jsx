@@ -1,10 +1,20 @@
 import React from "react";
+import NavBar from '../NavBar/NavBar';
+import styles from './Home.module.css';
+import CardHome from './Card';
 
 const Home = () => {
   return (
-    <>
-      <h1>Soy el Home</h1>
-    </>
+    <div className={styles.mainContainer}>
+      <NavBar />
+      <div className={styles.divCards}>
+        <CardHome />
+        <CardHome />
+        <CardHome />
+        <CardHome />
+        <CardHome />
+      </div>
+    </div>
   )
 }
 
