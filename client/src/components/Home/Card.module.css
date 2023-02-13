@@ -11,6 +11,8 @@
   transition: 0.5s;
   font-family: Helvetica;
   border-radius: 10px;
+  color: #BACDD9;
+  box-shadow: 1px 1px 1px 1px #F2E6DF, 1px 1px 1px 1px #F2E6DF;
 }
 
 .mainContanier img {
@@ -23,6 +25,7 @@
   transition: 1s;
   background-image: url('/src/assets/imagenes/spectrum-gradient.svg');
   background-size: cover;
+  color: #F2E6DF;
 }
 
 .mainContanier:active {

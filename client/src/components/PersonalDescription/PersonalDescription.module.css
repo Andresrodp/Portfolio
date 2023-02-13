@@ -53,7 +53,17 @@
   color: #2F4673;
 }
 
+.centerTarjet p {
+  text-align: justify;
+}
+
 .centerTarjet:hover {
   transform: scale(1.02);
   transition: 0.5s;
+}
+
+.lenguajes {
+  font-weight: bold;
+  text-align: center;
+  margin: 1px;
 }
