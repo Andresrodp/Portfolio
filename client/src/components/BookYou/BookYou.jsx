@@ -1,10 +1,13 @@
 import React from "react";
+import NavBar from "../NavBar/NavBar";
 
 const BookYou = () => {
   return (
     <div>
-      <h1>Componente para BookYou</h1>
-
+      <NavBar />
+      <div>
+        <h1>Componente para BookYou</h1>
+      </div>
     </div>
   )
 }

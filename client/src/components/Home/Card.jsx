@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './Card.module.css';
 
-const CardHome = () => {
+const CardHome = (props) => {
   return (
-    <div className={styles.mainContanier}>
-      <h1>las cards</h1>
+    <div className={styles.mainContanier} >
+      <h2>{props.titulo}</h2>
+      <img src={props.img} alt="img_card" />
     </div>
   )
 }

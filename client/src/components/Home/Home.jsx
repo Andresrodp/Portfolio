@@ -2,17 +2,47 @@ import React from "react";
 import NavBar from '../NavBar/NavBar';
 import styles from './Home.module.css';
 import CardHome from './Card';
+import img_libro from '../../assets/imagenes/img_lector.png'
+import img_calculadora from '../../assets/imagenes/img_calculadora.png'
+import img_profe from '../../assets/imagenes/img_profesor.png'
+import img_countries from '../../assets/imagenes/img_countries.png'
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  const navigate = useNavigate()
+  const handleClick = (props) => {
+    console.log(props.route);
+    navigate(props.route)
+  }
   return (
     <div className={styles.mainContainer}>
       <NavBar />
-      <div className={styles.divCards}>
-        <CardHome />
-        <CardHome />
-        <CardHome />
-        <CardHome />
-        <CardHome />
+      <h1>Proyectos</h1>
+      <div className={styles.divCards} >
+        <div className={styles.individualDiv} onClick={() => handleClick({ route: '/countries' })}>
+          <CardHome
+            titulo='Countries'
+            img={img_countries}
+          />
+        </div>
+        <div className={styles.individualDiv} onClick={() => handleClick({ route: '/bookyou' })}>
+          <CardHome
+            titulo={'BookYou'}
+            img={img_libro}
+          />
+        </div>
+        <div className={styles.individualDiv} onClick={() => handleClick({ route: '/calculadora' })}>
+          <CardHome
+            titulo={'calculadora'}
+            img={img_calculadora}
+          />
+        </div>
+        <div className={styles.individualDiv} onClick={() => handleClick({ route: '/profesor' })}>
+          <CardHome
+            titulo={'Profesor'}
+            img={img_profe}
+          />
+        </div>
       </div>
     </div>
   )

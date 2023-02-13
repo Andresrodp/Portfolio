@@ -9,6 +9,8 @@ import Countries from './components/Countries/Countries';
 import Blog from './components/Blog/Blog';
 import Contacto from './components/Contacto/Contacto';
 import PersonalDescription from './components/PersonalDescription/PersonalDescription';
+import Calculadora from './components/calculadora/Calculadora';
+import Profesor from './components/profesor/Profesor';
 
 const App = createBrowserRouter([
   {
@@ -43,6 +45,14 @@ const App = createBrowserRouter([
       {
         path: '/countries',
         element: <Countries />
+      },
+      {
+        path: '/calculadora',
+        element: <Calculadora />
+      },
+      {
+        path: '/profesor',
+        element: <Profesor />
       }
     ]
   }

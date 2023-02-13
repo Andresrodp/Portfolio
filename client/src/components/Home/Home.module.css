@@ -3,13 +3,54 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-  background-color: #F2E6DF;
+  background-color: #2F4673;
   min-height: 100vh;
+}
+
+.mainContainer h1 {
+  font-family: Helvetica;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: -5px;
 }
 
 .divCards {
   display: flex;
-  background-color: red;
+  background-color: transparent;
   align-items: center;
-  height: 50vh;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+
+.individualDiv {
+  height: 90%;
+  width: 12%;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+  .divCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2E6DF;
+    min-height: 100vh;
+  }
+
+  .individualDiv {
+    height: 15%;
+    width: 80%;
+    margin: 1rem;
+  }
 }
