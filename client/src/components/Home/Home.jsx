@@ -1,49 +1,40 @@
 import React from "react";
-import NavBar from '../NavBar/NavBar';
-import styles from './Home.module.css';
-import CardHome from './Card';
-import img_libro from '../../assets/imagenes/img_lector.png'
-import img_calculadora from '../../assets/imagenes/img_calculadora.png'
-import img_profe from '../../assets/imagenes/img_profesor.png'
-import img_countries from '../../assets/imagenes/img_countries.png'
-import { useNavigate } from "react-router-dom";
+import NavBar from "../NavBar/NavBar";
+import styles from './Home.module.css'
+import img_perfil from '../../assets/imagenes/Andres.png'
+import CardTech from './CardTech.jsx'
+import img_css from '../../assets/logos/css.png'
+import img_html from '../../assets/logos/html5.png'
+import img_js from '../../assets/logos/JavaScript.png'
+import img_jwt from '../../assets/logos/jwt.png'
+import img_mongoDB from '../../assets/logos/mongoDB.png'
+import img_node from '../../assets/logos/Node.png'
+import img_postgre from '../../assets/logos/postgreSQL.png'
+import img_react from '../../assets/logos/react.png'
+import img_redux from '../../assets/logos/redux.png'
 
 const Home = () => {
-  const navigate = useNavigate()
-  const handleClick = (props) => {
-    console.log(props.route);
-    navigate(props.route)
-  }
+  const imagenes = [img_css, img_html, img_js, img_jwt, img_mongoDB, img_node, img_postgre, img_react, img_redux]
   return (
     <div className={styles.mainContainer}>
       <NavBar />
-      <h1>Proyectos</h1>
-      <div className={styles.divCards} >
-        <div className={styles.individualDiv} onClick={() => handleClick({ route: '/countries' })}>
-          <CardHome
-            titulo='Countries'
-            img={img_countries}
-          />
+      <div className={styles.divInformation}>
+        <div className={styles.divTemplate}>
+          <h5>Estudia más, capacítate más, esfuérzate más... y mantén la puerta abierta</h5>
+          <h1>Andrés Ricardo Rodríguez Pardo</h1>
+          <h3>FullStack Developer</h3>
+          <div className={styles.divTechnologies}>
+            {imagenes.map((card, i) => {
+              return <CardTech img={card} key={i} />
+            })}
+          </div>
+          <p></p>
         </div>
-        <div className={styles.individualDiv} onClick={() => handleClick({ route: '/bookyou' })}>
-          <CardHome
-            titulo={'BookYou'}
-            img={img_libro}
-          />
-        </div>
-        <div className={styles.individualDiv} onClick={() => handleClick({ route: '/calculadora' })}>
-          <CardHome
-            titulo={'calculadora'}
-            img={img_calculadora}
-          />
-        </div>
-        <div className={styles.individualDiv} onClick={() => handleClick({ route: '/profesor' })}>
-          <CardHome
-            titulo={'Profesor'}
-            img={img_profe}
-          />
+        <div className={styles.divImg}>
+          <img src={img_perfil} alt="foto de perfil" />
         </div>
       </div>
+
     </div>
   )
 }

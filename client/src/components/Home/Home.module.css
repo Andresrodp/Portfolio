@@ -8,50 +8,48 @@
   color: #BACDD9;
 }
 
-.mainContainer h1 {
-  font-family: Helvetica;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: -5px;
-}
-
-.divCards {
+.divInformation {
   display: flex;
-  background-color: transparent;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  min-height: 80vh;
+  height: 100%;
+}
+
+.divTemplate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: -5%;
+  margin-right: 5%;
+}
+
+.divTemplate h5 {
+  margin: 2px;
+}
+
+.divTemplate h1 {
+  margin: 4px;
+  font-size: 40px;
+}
+
+.divImg {
+  height: 30%;
+  width: 30%;
+}
+
+.divImg img {
+  height: 100%;
   width: 100%;
-  max-width: 100%;
-  padding-bottom: 1rem;
+  border-radius: 50%;
+  border: solid 2px;
+  margin: 2rem;
 }
 
-.individualDiv {
-  height: 90%;
-  width: 12%;
-  margin: 1rem;
-  cursor: pointer;
-}
-
-@media only screen and (min-width:320px) and (max-width:480px) {
-  .divCards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: flex-start;
-  }
-
-  .mainContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F2E6DF;
-    min-height: 100vh;
-  }
-
-  .individualDiv {
-    height: 15%;
-    width: 80%;
-    margin: 1rem;
-  }
+.divTechnologies {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }

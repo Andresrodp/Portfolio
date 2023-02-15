@@ -6,7 +6,7 @@ import InitialPage from './components/InitialPage/InitialPage';
 import Home from './components/Home/Home';
 import BookYou from './components/BookYou/BookYou';
 import Countries from './components/Countries/Countries';
-import Blog from './components/Blog/Blog';
+import Proyectos from './components/Proyectos/Proyectos';
 import Contacto from './components/Contacto/Contacto';
 import PersonalDescription from './components/PersonalDescription/PersonalDescription';
 import Calculadora from './components/calculadora/Calculadora';
@@ -31,8 +31,8 @@ const App = createBrowserRouter([
         element: <PersonalDescription />
       },
       {
-        path: '/blog',
-        element: <Blog />
+        path: '/proyectos',
+        element: <Proyectos />
       },
       {
         path: '/contacto',
