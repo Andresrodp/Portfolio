@@ -2,7 +2,7 @@
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  background-color: #F2E6DF;
+  background-color: #2F4673;
 }
 
 .secondContainer {
@@ -17,15 +17,16 @@
 .tarjet {
   width: 50%;
   height: 50%;
-  background-color: #728EA6;
+  background-color: #F2E6DF;
   border-radius: 5px;
-  border: solid 3px #2F4673;
+  border: solid 3px #728EA6;
   padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: Helvetica;
+  color: #2F4673;
 }
 
 .items {
@@ -39,5 +40,4 @@
 .items p {
   margin-left: 7px;
   font-weight: bold;
-  color: #F2E6DF;
 }

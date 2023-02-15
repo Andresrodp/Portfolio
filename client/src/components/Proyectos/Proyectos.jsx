@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import NavBar from '../NavBar/NavBar';
 import CardHome from './Card';
 import { useNavigate } from 'react-router-dom';
@@ -7,8 +7,17 @@ import img_libro from '../../assets/imagenes/img_lector.png'
 import img_calculadora from '../../assets/imagenes/img_calculadora.png'
 import img_profe from '../../assets/imagenes/img_profesor.png'
 import img_countries from '../../assets/imagenes/img_countries.png'
+import swal from 'sweetalert';
 
 const Proyectos = () => {
+  useEffect(() => {
+    swal({
+      title: "En construcción",
+      text: "Lo que ves no es la versión definitiva",
+      icon: "info",
+      buttons: "ok",
+    })
+  })
   const navigate = useNavigate()
   const handleClick = (props) => {
     console.log(props.route);

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import swal from 'sweetalert';
 import NavBar from '../NavBar/NavBar';
 import styles from './PersonalDescription.module.css';
 import {
@@ -10,7 +11,16 @@ import {
   tituloLateralDerecho,
   tituloLateralIzquierdo,
 } from './templates';
+
 const PersonalDescription = () => {
+  useEffect(() => {
+    swal({
+      title: "En construcción",
+      text: "Lo que ves no es la versión definitiva",
+      icon: "info",
+      buttons: "ok",
+    })
+  })
   return (
     <div className={styles.mainContainer}>
       <NavBar />
