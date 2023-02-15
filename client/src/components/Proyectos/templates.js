@@ -1,0 +1,1 @@
+export const descripcionBookyou = 'Este fue el primer gran proyecto en el que participe. Durante un mes entero estuvimos, junto con mis compañeros, diseñando e implementando lo que denominamos: Una red social para lectores y escritores. Es un proyecto al que le tengo mucho cariño, por lo que significó para mi proceso de formación y por las personas que conocí trabajando en él.'
